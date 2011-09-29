@@ -10,12 +10,12 @@ menu = ["burger", "pizza"]
 
 class OrderHandler(KeywordHandler):
     """
-    A highly simplfied handler for hotel room service ordering it expects:
+    A highly simplfied handler for hotel room service ordering. It expects:
         order (3 digit room number) (menu item)
     For example:
         order 101 pizza
-    If this format isn't followed it creates errors with a a foreign key to
-    an order object marked for hotel staff followup. Possible Errors:
+    If this format isn't followed it creates error objects with foreign keys
+    to an order object marked for hotel staff followup. Possible errors:
     
     MenuError: A valid menu item wasn't found in the order
     RoomError: A valid room number (i.e. 3 digits) wasn't found
